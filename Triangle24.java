@@ -6,6 +6,7 @@ public class Triangle24 {
         System.out.print("Masukan nilai n = ");
         int n = sc.nextInt();
         
+        //Segitiga Normal 
         int i = 0;
         while (i <= n) {
             int j = 0;
@@ -15,6 +16,17 @@ public class Triangle24 {
             }
             System.out.println();
             i++;
+        }
+        //Segitiga Terbalik
+        i = n;
+        while (i >= 1) {
+            int j = 0;
+            while (j < i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i--;
         }
         sc.close();
     }
